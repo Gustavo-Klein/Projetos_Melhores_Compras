@@ -1,6 +1,0 @@
-RN 24:
-
-Um cliente pode fazer varios pedidos, porém um pedido está associado a somente um cliente. É importante que seja armazenado a data do pedido e que cada pedido tenha o seu código próprio, ambas as exigências são obrigatórias.
-
-
-
