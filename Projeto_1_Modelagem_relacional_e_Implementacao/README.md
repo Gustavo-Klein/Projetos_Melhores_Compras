@@ -6,7 +6,7 @@
 ## Ferramentas utilizadas
 - 	🔨 Oracle SQL Data Modeler
 ## Passos para solução
-📕 Criação de uma nova regra de negócio; (.Projetos_Melhores_Compras/Projeto_1_Modelagem_relacional_e_Implementacao/Arquivo%201_regranegocio.txt)
+📕 Criação de uma nova [Regra de negócio](./Arquivo%201_regranegocio.txt)
 
 📊 Desenvolvimento do [Projeto Lógico](./Arquivo%202_proj_logico_bd.pdf);
 
