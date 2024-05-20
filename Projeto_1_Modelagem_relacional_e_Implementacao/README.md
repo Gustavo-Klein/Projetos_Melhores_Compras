@@ -8,7 +8,7 @@
 ## Passos para solução
 📕 Criação de uma nova regra de negócio; (.Projetos_Melhores_Compras/Projeto_1_Modelagem_relacional_e_Implementacao/Arquivo 1_regranegocio.txt)
 
-📊 Desenvolvimento do [Projeto Lógico](./Arquivo2_proj_logico_bd);
+📊 Desenvolvimento do [Projeto Lógico](./Arquivo 2_proj_logico_bd.pdf);
 
 💻 Implementação do Projeto Físico;
 
