@@ -13,7 +13,7 @@
 
 💻 Implementação do [Projeto Físico](./Arquivo%203_proj_fisico_bd.pdf);
 
-🔍 [Scripts DDL](./Arquivo%204_script.bd.SQL) para criação de tabelas e estruturas, assim como comandos para exclusão das estruturas.
+🔍 [Scripts DDL](./Arquivo%204_script_bd.SQL) para criação de tabelas e estruturas, assim como comandos para exclusão das estruturas.
 
 Em construção...
 
