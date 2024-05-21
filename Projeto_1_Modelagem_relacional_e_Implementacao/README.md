@@ -5,6 +5,7 @@
 - O principal desafio é modernizar e agilizar a organização, substituindo processos manuais e planilhas eletrônicas por soluções de TI robustas. O foco inicial é a criação de uma funcionalidade na plataforma de e-commerce que permita a exibição de vídeos explicativos sobre os produtos. O primeiro passo será criar o modelo de dados relacional baseado em 23 regras de negócio contidas no arquivo "Regras_de_Negocio.txt" e 1 regra de negócio definida pelo aluno no arquivo "Arquivo1_regranegocio.txt" que irá suportar o armazenamento dos dados dessa nova funcionalidade (visualização dos vídeos dos produtos). Já as camadas de integração e apresentação serão feitas posteriormente por uma empresa externa, que fará uso dessa nova estrutura de dados.
 ## Ferramentas utilizadas
 - 	🔨 Oracle SQL Data Modeler
+- 	🔨 Oracle SQL Developer
 ## Passos para solução
 📕 Criação de uma nova [Regra de negócio](./Arquivo%201_regranegocio.txt)
 
@@ -12,7 +13,7 @@
 
 💻 Implementação do [Projeto Físico](./Arquivo%203_proj_fisico_bd.pdf);
 
-🔍 Scripts DDL para criação de tabelas e estruturas, assim como comandos para exclusão das estruturas.
+🔍 [Scripts DDL](./Arquivo%204_script.bd.SQL) para criação de tabelas e estruturas, assim como comandos para exclusão das estruturas.
 
 Em construção...
 
