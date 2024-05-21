@@ -14,4 +14,6 @@
 
 🔍 Scripts DDL para criação de tabelas e estruturas, assim como comandos para exclusão das estruturas.
 
+Em construção...
+
 
