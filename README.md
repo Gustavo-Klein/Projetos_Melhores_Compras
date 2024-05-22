@@ -16,6 +16,8 @@ Abaixo está uma visão geral dos projetos incluídos:
 
 
 ### Projeto 2 - Manipulação de banco de dados relacionais:
+- Inserção e manipulação de dados no modelo relacional (Comandos DML).
+- Criação de consultas SQL (Comandos DQL).
 
 ### Projeto 3 - Bloco anônimo PL/SQL e LGPD:
 
