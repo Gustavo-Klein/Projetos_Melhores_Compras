@@ -15,7 +15,7 @@
 
 🔍 [Scripts DDL](./Arquivo%204_script_bd.SQL) para criação de tabelas e estruturas, assim como comandos para exclusão das estruturas.
 
-📕 Criação de um [Arquivo](./Arquivo%205_evidencia_implantacao_bd.docx) para evidencias a implantação.
+📕 Criação de um [Arquivo](./Arquivo%205_evidencia_implantacao_bd.docx) para evidenciar a implantação.
 
 
 
