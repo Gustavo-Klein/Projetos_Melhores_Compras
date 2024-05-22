@@ -15,7 +15,7 @@ Abaixo está uma visão geral dos projetos incluídos:
 - Comandos DDL, Identity e Sequence.
 
 
-### Projeto 2 - Manipulação de banco de dados relacionais:
+### [Projeto 2](https://github.com/gugaklein13/Projetos_Melhores_Compras/tree/main/Projeto_2_Manipulacao_e_consulta_no_banco_relacional) - Manipulação de banco de dados relacionais:
 - Inserção e manipulação de dados no modelo relacional (Comandos DML).
 - Criação de consultas SQL (Comandos DQL).
 
