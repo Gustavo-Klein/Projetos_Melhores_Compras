@@ -10,7 +10,7 @@ Cada projeto aborda diferentes aspectos e desafios relacionados à Engenharia e 
 Este repositório está organizado em 14 pastas dentro do repositório Projetos_Melhores_Compras, cada um correspondente a um projeto específico. Cada projeto contém seus próprios arquivos de código, dados e documentação.
 Abaixo está uma visão geral dos projetos incluídos:
 
-### Projeto 1 - Modelagem relacional:
+### [Projeto 1](https://github.com/gugaklein13/Projetos_Melhores_Compras/tree/main/Projeto_1_Modelagem_relacional_e_Implementacao) - Modelagem relacional:
 - Criação e implantação de um modelo relacional de dados com base em regras de negócio, utilizando  conceitos como entidades, relacionamentos, carinalidade e normalização de dados.
 - Comandos DDL, Identity e Sequence.
 
