@@ -7,7 +7,14 @@
 - 	🔨 Oracle SQL Data Modeler
 - 	🔨 Oracle SQL Developer
 ## Passos para solução
-### 📕 Criação de uma nova [Regra de negócio](./Arquivo%201_regranegocio.txt)
+### 📕 Criação de uma nova [Regra de negócio](./Arquivo%201_regranegocio.txt):
+Durante a reunião com o time de negócios foram definidas 23 regras para o desenvolvimento do modelo relacional.
+
+| Número | Descrição da Regra de Negócio (RN) |
+|--------|------------------------------------|
+| RN01   | Um produto pode ter nenhum ou vários vídeos associados e cada vídeo somente pode ser exibido caso seu status esteja em “A” (ativo). O status do vídeo pode receber apenas os seguintes conteúdos: A(tivo) ou I(nativo). Para essa coluna status do produto, crie uma restrição do tipo check constraint, permitindo apenas o conteúdo A ou I. |
+| RN02   | O código de identificação do produto deve ser um número sequencial para ser utilizado como SEQUENCE ou IDENTITY e crescente, de acordo com novos produtos que forem sendo cadastrados. |
+
 
 📊 Desenvolvimento do [Projeto Lógico](./Arquivo%202_proj_logico_bd.pdf);
 
