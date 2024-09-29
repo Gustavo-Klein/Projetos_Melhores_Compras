@@ -7,7 +7,7 @@
 - 	🔨 Oracle SQL Data Modeler
 - 	🔨 Oracle SQL Developer
 ## Passos para solução
-#📕 Criação de uma nova [Regra de negócio](./Arquivo%201_regranegocio.txt)
+### 📕 Criação de uma nova [Regra de negócio](./Arquivo%201_regranegocio.txt)
 
 📊 Desenvolvimento do [Projeto Lógico](./Arquivo%202_proj_logico_bd.pdf);
 
