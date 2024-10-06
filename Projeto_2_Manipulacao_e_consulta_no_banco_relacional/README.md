@@ -8,9 +8,9 @@
 ## Passos para solução:
 Baseado no modelo físico a seguir, criar instruções solicitadas:
 ![image](https://github.com/user-attachments/assets/872acbb8-a7b3-41ac-a47e-14f54e5aea79)
-### 📕 Instruções DML e SELECT:
+### 📕 Instruções DML:
 
-### Primeiro desafio: Aplicar instruções DML (data manipulation language) e instrução SELECT no projeto das Melhores Compras LTDA, cadastrando centenas de informações importantes para posterior uso das áreas de negócio da organização.
+### Primeiro desafio: Aplicar instruções DML (data manipulation language), cadastrando centenas de informações importantes para posterior uso das áreas de negócio da organização.
 
 a) Para essa etapa de instruções DML: Popular a tabela DEPARTAMENTO:
 
