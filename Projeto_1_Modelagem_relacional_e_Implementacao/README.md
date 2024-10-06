@@ -171,7 +171,7 @@ CREATE TABLE t_sgv_visu_video (
     login_cliente   VARCHAR2(10) DEFAULT NULL
 );
 ```
-Realizando alteração das tabelas:
+Criação das restrições::
 
 ```sql
 ALTER TABLE t_sgv_cat_chamado ADD CONSTRAINT pk_t_sgv_cat_chamado PRIMARY KEY ( cd_categoria_cham );
@@ -321,51 +321,6 @@ EXCEPTION
         RAISE;
 END;
 /
-```
-Criação das restrições:
-```sql
-ALTER TABLE t_sgv_cat_chamado ADD CONSTRAINT pk_t_sgv_cat_chamado PRIMARY KEY ( cd_categoria_cham );
-
-ALTER TABLE t_sgv_cat_produto
-    ADD CONSTRAINT ck_sgv_cat_prod_st CHECK ( st_categoria = 'A' OR st_categoria = 'I' );
-ALTER TABLE t_sgv_cat_produto ADD CONSTRAINT pk_t_sgv_cat_produto PRIMARY KEY ( cd_categoria );
-ALTER TABLE t_sgv_cat_produto ADD CONSTRAINT un_sgv_cat_prod_dscat UNIQUE ( ds_categoria );
-
-ALTER TABLE t_sgv_cat_video ADD CONSTRAINT pk_t_sgv_cat_video PRIMARY KEY ( cd_categoria_vid );
-
-ALTER TABLE t_sgv_chamado
-    ADD CONSTRAINT ck_sgv_cham_st CHECK ( st_chamado IN ('A', 'E', 'C', 'F', 'X') );
-ALTER TABLE t_sgv_chamado
-    ADD CONSTRAINT ck_sgv_cham_is CHECK (indice_satisf > 0 AND indice_satisf < 11);
-ALTER TABLE t_sgv_chamado ADD CONSTRAINT pk_t_sgv_chamado PRIMARY KEY ( cd_chamado );
-
-ALTER TABLE t_sgv_cliente ADD CONSTRAINT pk_t_sgv_cliente PRIMARY KEY ( cd_cliente );
-
-ALTER TABLE t_sgv_cliente_fisico ADD CONSTRAINT pk_t_sgv_cliente_fisico PRIMARY KEY ( cd_cliente );
-ALTER TABLE t_sgv_cliente_fisico ADD CONSTRAINT un_sgv_cli_fis_cpf UNIQUE ( cpf );
-ALTER TABLE t_sgv_cliente_fisico ADD CONSTRAINT un_sgv_cli_fis_rg UNIQUE ( cpf, rg );
-
-ALTER TABLE t_sgv_cliente_juridico ADD CONSTRAINT pk_t_sgv_cliente_juridico PRIMARY KEY ( cd_cliente );
-ALTER TABLE t_sgv_cliente_juridico ADD CONSTRAINT un_sgv_cli_jurid_cnpj UNIQUE ( cnpj );
-ALTER TABLE t_sgv_cliente_juridico ADD CONSTRAINT un_sgv_cli_jurid_ie UNIQUE ( insc_estadual );
-
-ALTER TABLE t_sgv_funcionario ADD CONSTRAINT pk_t_sgv_funcionario PRIMARY KEY ( cd_funcionario );
-ALTER TABLE t_sgv_funcionario ADD CONSTRAINT un_sgv_func_cpf UNIQUE ( cpf );
-
-ALTER TABLE t_sgv_item_pedido ADD CONSTRAINT pk_t_sgv_item_pedido PRIMARY KEY ( cd_pedido, cd_item );
-
-ALTER TABLE t_sgv_pedido ADD CONSTRAINT pk_t_sgv_pedido PRIMARY KEY ( cd_pedido );
-
-ALTER TABLE t_sgv_produto
-    ADD CONSTRAINT ck_sgv_prod_st CHECK ( st_produto IN ('A', 'I', 'P') );
-ALTER TABLE t_sgv_produto ADD CONSTRAINT pk_t_sgv_produto PRIMARY KEY ( cd_produto );
-ALTER TABLE t_sgv_produto ADD CONSTRAINT un_sgv_prod_dsprod UNIQUE ( ds_produto );
-
-ALTER TABLE t_sgv_video_produto
-    ADD CONSTRAINT ck_sgv_vid_produto_st CHECK ( st_video IN ('A', 'I', 'P') );
-ALTER TABLE t_sgv_video_produto ADD CONSTRAINT pk_t_sgv_video_produto PRIMARY KEY ( cd_video );
-
-ALTER TABLE t_sgv_visu_video ADD CONSTRAINT pk_t_sgv_visu_video PRIMARY KEY ( cd_visualizacao, cd_video );
 ```
 
 ### 📕 Criação de um documento Word para evidenciar a implantação.
