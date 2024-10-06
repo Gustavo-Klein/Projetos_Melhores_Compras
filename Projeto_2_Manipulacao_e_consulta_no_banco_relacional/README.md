@@ -9,7 +9,8 @@
 Baseado no modelo físico a seguir, criar instruções solicitadas:
 ![image](https://github.com/user-attachments/assets/872acbb8-a7b3-41ac-a47e-14f54e5aea79)
 ### 📕 Instruções DML e SELECT:
-Aplicar instruções DML e instrução SELECT no projeto das Melhores Compras LTDA, cadastrando centenas de informações importantes para posterior uso das áreas de negócio da organização. .
+
+### Primeiro desafio: Aplicar instruções DML (data manipulation language) e instrução SELECT no projeto das Melhores Compras LTDA, cadastrando centenas de informações importantes para posterior uso das áreas de negócio da organização.
 
 a) Para essa etapa de instruções DML: Popular a tabela DEPARTAMENTO:
 
@@ -629,3 +630,56 @@ z) Confirme todas as transações pendentes.
 ```sql
 COMMIT;
 ```
+### Segundo desafio: Comandos DQL (Data Query Language) para analisar informações.
+
+a) Crie uma consulta SQL por meio do comando SELECT que exiba informações das categorias de produto e respectivos produtos de cada categoria.  Exiba as seguintes informações: código e nome da categoria, código e descrição do produto, valor unitário, tipo de embalagem e percentual do lucro de cada produto. Caso exista alguma categoria sem produto, favor exibir a categoria e deixar os dados do produto em branco. Classifique a consulta em ordem de categoria e nome de produto de forma ascendente. 
+
+```sql
+SELECT C.CD_CATEGORIA, C.DS_CATEGORIA, P.CD_PRODUTO, P.DS_PRODUTO, P.VL_UNITARIO, P.TP_EMBALAGEM, P.VL_PERC_LUCRO
+FROM MC_CATEGORIA_PROD C LEFT OUTER JOIN MC_PRODUTO P
+ON (C.CD_CATEGORIA = P.CD_CATEGORIA)
+WHERE C.TP_CATEGORIA = 'P'
+ORDER BY C.DS_CATEGORIA, P.DS_PRODUTO;
+```
+![A](https://github.com/user-attachments/assets/4b8e2155-4d98-437f-bf35-08e27f652173)
+
+
+b) Crie uma instrução SQL que exiba os dados dos clientes pessoas físicas. Exiba as seguintes informações: código e nome do cliente, e-mail, telefone, login, data de nascimento, dia da semana de nascimento, anos de vida, sexo biológico e CPF.  
+
+```sql
+SELECT C.NR_CLIENTE, C.NM_CLIENTE, C.DS_EMAIL, C.NR_TELEFONE, C.NM_LOGIN, 
+F.DT_NASCIMENTO, TO_CHAR(F.DT_NASCIMENTO, 'DAY') AS DIA_NASCIMENTO,  
+TRUNC(MONTHS_BETWEEN(SYSDATE, F.DT_NASCIMENTO)/12) AS ANOS_VIDA, F.FL_SEXO_BIOLOGICO, F.NR_CPF 
+FROM MC_CLIENTE C INNER JOIN MC_CLI_FISICA F  
+ON (C.NR_CLIENTE = F.NR_CLIENTE)
+```
+![B](https://github.com/user-attachments/assets/deba6d96-fbdd-450c-a57c-d6859eee7b87)
+
+c) Crie uma instrução SQL que exiba os dados dos clientes pessoa jurídica. Exiba as seguintes informações: código e nome do cliente, e-mail, telefone, login, data de fundação, dia da semana da fundação, anos de vida da empresa e CNPJ. 
+
+```sql
+SELECT C.NR_CLIENTE, C.NM_CLIENTE, C.DS_EMAIL, C.NR_TELEFONE, C.NM_LOGIN, 
+J.DT_FUNDACAO, TO_CHAR(J.DT_FUNDACAO, 'DAY') AS DIA_FUNDACAO,  
+TRUNC(MONTHS_BETWEEN(SYSDATE, J.DT_FUNDACAO)/12) AS ANOS_VIDA_FUND, J.NR_CNPJ 
+FROM MC_CLIENTE C INNER JOIN MC_CLI_JURIDICA J  
+ON (C.NR_CLIENTE = J.NR_CLIENTE)
+```
+![C](https://github.com/user-attachments/assets/eb3614cc-383e-49df-87ac-3bd232b940a7)
+
+d) Exiba as seguintes informações da tabela de visualização dos vídeos dos produtos: código do produto, nome do produto, data e hora de visualização do produto. Exiba essas informações classificadas pela data e hora mais recente. 
+
+```sql
+
+SELECT V.CD_PRODUTO, P.DS_PRODUTO, V.DT_VISUALIZACAO, V.NR_HORA_VISUALIZACAO 
+FROM MC_SGV_VISUALIZACAO_VIDEO V INNER JOIN MC_PRODUTO P  
+ON (V.CD_PRODUTO = P.CD_PRODUTO) 
+ORDER BY V.DT_VISUALIZACAO DESC, V.NR_HORA_VISUALIZACAO DESC
+```
+![d](https://github.com/user-attachments/assets/06489e82-4476-461f-97ab-bd373afa3a46)
+
+### 📕 Criação de um documento Word para evidenciar a implantação.
+
+Você pode conferir a documentação da implementação no arquivo a seguir: [Arquivo de implementação DML](./Arquivo%201_1_2_Comandos_DML.docx) e [Arquivo de implementação DQL](./Arquivo%202_1_3_Comandos_DQL.docx)
+
+## Conclusão
+- O projeto destaca a relevância da manipulação de dados em um ambiente corporativo por meio do uso de comandos DML e DQL. Os comandos DML são essenciais para a inserção, atualização e exclusão de dados, garantindo que o banco de dados seja constantemente atualizado com informações precisas. Já os comandos DQL possibilitam a extração de dados de forma eficiente, permitindo que a organização obtenha insights para a tomada de decisão. Com essas ferramentas, a empresa pode otimizar o desempenho, analisar tendências e atender às necessidades de mercado.
