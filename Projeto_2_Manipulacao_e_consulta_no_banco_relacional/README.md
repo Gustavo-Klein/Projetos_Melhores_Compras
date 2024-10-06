@@ -677,9 +677,6 @@ ORDER BY V.DT_VISUALIZACAO DESC, V.NR_HORA_VISUALIZACAO DESC
 ```
 ![d](https://github.com/user-attachments/assets/06489e82-4476-461f-97ab-bd373afa3a46)
 
-### 📕 Criação de um documento Word para evidenciar a implantação.
-
-Você pode conferir a documentação da implementação no arquivo a seguir: [Arquivo de implementação DML](./Arquivo%201_1_2_Comandos_DML.docx) e [Arquivo de implementação DQL](./Arquivo%202_1_3_Comandos_DQL.docx)
 
 ## Conclusão
 - O projeto destaca a relevância da manipulação de dados em um ambiente corporativo por meio do uso de comandos DML e DQL. Os comandos DML são essenciais para a inserção, atualização e exclusão de dados, garantindo que o banco de dados seja constantemente atualizado com informações precisas. Já os comandos DQL possibilitam a extração de dados de forma eficiente, permitindo que a organização obtenha insights para a tomada de decisão. Com essas ferramentas, a empresa pode otimizar o desempenho, analisar tendências e atender às necessidades de mercado.
